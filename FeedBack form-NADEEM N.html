@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/Assgt1_.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>FeedBack form </title>
+</head>
+<body>
+    <h1>Event Feedback Form</h1>
+    <p>Thank you for taking the time to provide feedback about the event.</p>
+
+    <h2>Event Details</h2>
+    <p>Name of the event: <b>Amrita Annual Conference</b></p>
+    <p>Date and location: <b>March 10-12, Amrtiapuri,Kollam</b></p>
+
+    <h2>Your Information</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required=""><br><br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required=""><br><br>
+
+      <label for="work">Work:</label>
+      <input type="text" id="work" name="work" required=""><br><br>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required=""><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required=""><br><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required=""><br><br>
+
+      <h2>Question Ratings</h2>
+      <p>Rate the following aspects of the event:</p>
+
+      <label for="organization">Organization:</label>
+      <select id="organization" name="organization" required="">
+        <option value="">Select one</option>
+        <option value="excellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="satisfactory">Satisfactory</option>
+        <option value="poor">Poor</option>
+      </select><br><br>
+
+      <label for="speakers">Speakers:</label>
+      <select id="speakers" name="speakers" required="">
+        <option value="">Select one</option>
+        <option value="excellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="satisfactory">Satisfactory</option>
+        <option value="poor">Poor</option>
+      </select><br><br>
+
+      <label for="food">Food:</label>
+      <select id="food" name="food" required="">
+        <option value="">Select one</option>
+        <option value="excellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="satisfactory">Satisfactory</option>
+        <option value="poor">Poor</option>
+      </select><br><br>
+      
+      
+       <p><b>Would you recommend this event to others?</b></p>
+      
+      <input type="radio" id="Yes" name="attend_again" value="Yes" required="">
+      <label for="yes">Yes</label><br><br>
+      
+      <input type="radio" id="no" name="attend_again" value="no" required="">
+      <label for="no">No</label><br><br>
+      
+      <p><b> How will you rate the overall event </b>?</p>
+      <input checked="checked" name="newsletter" type="radio" value="excellent"> excellent <input name="newsletter" type="radio" value="good"> good <input name="newsletter" type="radio" value="Satisfactory">satisfactory <input name="newsletter" type="radio" value="poor"> poor<br>
+
+
+      <h2>Qualitative Comments</h2>
+      <label for="Give us suggestions">Plus Points:</label>
+      <textarea id="plus_points" name="plus_points"></textarea><br><br>
+
+
+      <h2>Attach a Document or Image </h2>
+      <input type="file" id="attachment" name="attachment"><br><br>
+
+      <input type="submit" value="Save">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+      
+      <input checked="checked" name="newsletter" type="radio" value="daily"> Daily <input name="newsletter" type="radio" value="weekly"> Weekly<br>
+<textarea cols="20" name="comments" rows="5">Comment</textarea><br>
+<label><input name="terms" type="checkbox" value="tandc">Accept terms</label> <br>
+<input type="submit" value="Submit">
+
+
+    </form>
+
+
+
+    <h2>Thank you</h2>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+</body></html>
